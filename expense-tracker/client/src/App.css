@@ -17,6 +17,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  width: 100vw;
 }
 
 .container {
@@ -27,6 +28,8 @@ body {
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  text-align: center;
+  color: red;
 }
 
 h3 {
@@ -110,6 +113,35 @@ input[type='number'] {
   padding: 0;
   margin-bottom: 40px;
 }
+.list-container{
+  padding: 20px;
+  overflow: auto;
+  height: 400px;
+}
+.list-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.list-container::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.list-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									  40% 0%,
+									  75% 84%,
+									  from(#826bf8),
+									  to(#594d97),
+									  color-stop(.6,#a897fc))
+}
 
 .list li {
   background-color: #fff;
@@ -117,6 +149,7 @@ input[type='number'] {
   color: #333;
   display: flex;
   justify-content: space-between;
+  width: 300px;
   position: relative;
   padding: 10px;
   margin: 10px 0;
@@ -148,4 +181,17 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+}
+.history{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 30px auto;
 }

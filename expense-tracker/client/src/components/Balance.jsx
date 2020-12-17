@@ -12,7 +12,7 @@ export const Balance = () => {
     return (
     <>
         <h4>Your Balance</h4>
-        <h1>₹{total}</h1>
+    <h1 className={total>=0 ?"money plus":"money minus"} >{total>=0?'':'-'}₹{(Math.abs(total)).toLocaleString('en-IN', { maximumSignificantDigits: 3 })}</h1>
     </>
     )
 }

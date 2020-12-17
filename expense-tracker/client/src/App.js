@@ -7,14 +7,18 @@ import {TransactionList} from "./components/TransactionList.jsx"
 import {AddTransaction} from "./components/AddTransaction"
 import {GlobalProvider} from "./context/GlobalState"
 function App() {
+  console.log("APP js");
   return (
     <GlobalProvider >
       <Header/>
+      <div className="main-container">
+      
       <div className="container">
-        <Balance/>
-        <IncomeExpenses/>
+            <Balance/>
+            <IncomeExpenses/>
+            <AddTransaction/>
+        </div>
         <TransactionList/>
-        <AddTransaction/>
       </div>
     </GlobalProvider>
   );
