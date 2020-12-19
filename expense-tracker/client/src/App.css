@@ -118,9 +118,10 @@ input[type='number'] {
   overflow: auto;
   height: 400px;
 }
-.list-container::-webkit-scrollbar-track
+/* .list-container::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 	background-color: #F5F5F5;
 	border-radius: 10px;
 }
@@ -142,7 +143,7 @@ input[type='number'] {
 									  to(#594d97),
 									  color-stop(.6,#a897fc))
 }
-
+ */
 .list li {
   background-color: #fff;
   box-shadow: var(--box-shadow);
