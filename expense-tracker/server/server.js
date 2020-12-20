@@ -15,17 +15,18 @@ const transactions = require('./routes/transactions');
 const app = express();
 
 //* Enable CORS
+app.use(cors())
 app.options('*',cors());
 
 app.use(express.json());
-if(process.env.NODE_ENV === 'development'){
-  app.use(morgan(dev));
-}
+
 
 if(process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
-
+app.get('/',(req,res)=>{
+  res.status(200).send("Welcome to Expense Tracker api. Goto /api/v1/transactions for list of transactions");
+})
 app.use('/api/v1/transactions', transactions);
 
 

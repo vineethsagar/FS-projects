@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const moment = require('moment');
+
 
 const TransactionSchema = new mongoose.Schema({
   text: {
@@ -11,8 +13,8 @@ const TransactionSchema = new mongoose.Schema({
     required: [true, 'Please add a positive or negative number']
   },
   createdAt: {
-    type: Date,
-    default: Date.now
+    type: String,
+    default: moment(Date.now)
   }
 });
 
