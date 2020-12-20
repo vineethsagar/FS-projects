@@ -2,8 +2,11 @@ import React from 'react'
 
 export const Header = () => {
     return (
+        <>
         <h1>
-            Expense Tracker
+            Money Tracker
         </h1>
+        <p> :- by Vineeth Sagar</p>
+        </>
     )
 }
