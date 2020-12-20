@@ -6,7 +6,6 @@ export const Header = () => {
         <h1>
             Money Tracker
         </h1>
-        <p> :- by Vineeth Sagar</p>
         </>
     )
 }
