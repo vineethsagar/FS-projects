@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../balb-twitter-clone"
+		},
+		{
+			"path": "../react-assignmnets/todo-react"
 		}
 	]
 }
