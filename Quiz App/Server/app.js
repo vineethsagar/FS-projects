@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
+const cors = require('cors')
 require('dotenv/config');
 const app = express();
 
@@ -8,9 +9,9 @@ const app = express();
 
 // runs every time there is hit
 app.use(bodyParser.json())
-
+app.use(cors())
 // import from posts 
-// middle are
+// middleware
 const postRouter = require('./routes/posts')
 app.use('/posts',postRouter);
 
